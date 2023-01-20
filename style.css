@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 body{
-    background: #590D22;
-    color: #FFCCD5;
+    background: #000;
+    color: #0B090A;
 }
 #header{
     width: 100%;
@@ -34,7 +34,7 @@ nav ul li{
     margin: 10px 20px;
 }
 nav ul li a{
-    color: #FFF0F3;
+    color: #B1A7A6;
     text-decoration: none;
     font-size:18px ;
     position: relative; 
@@ -43,7 +43,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background:#800F2F ;
+    background:#A4161A ;
     position:absolute;
     left: 0;
     bottom: -6px;
@@ -55,7 +55,7 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 25px;
-    color: #FFF0F3;
+    color: #B1A7A6;
 }
 .header-text h1{
     font-size: 45px;
@@ -63,5 +63,66 @@ nav ul li a:hover::after{
 
 }
 .header-text h1 span{
-    color:#FF8FA3;
+    color:#E5383B;
 }
+
+/* -------------------------About----------------------------- */
+#about{
+    padding:80px 0;
+    color: #B1A7A6;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+.tab-titles{
+    display:flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background:#A4161A;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 70%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #A4161A;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
